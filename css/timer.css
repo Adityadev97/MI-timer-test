@@ -2,7 +2,7 @@ body{
 	background-image: url('../assets/imgs/Timer_bg.jpg');
 	width: 100%;
 	min-width:500px;
-	max-width: 975px;
+	max-width: 1000px;
 	min-height: 750px;
 	margin-left: auto;
 	margin-right: auto;
@@ -26,7 +26,7 @@ body{
 	width:100%;
 	height: 50px;
 	margin-top:15px;
-	margin-bottom:80px;
+	margin-bottom:100px;
 	min-width:904px;
 }
 
@@ -70,6 +70,9 @@ body{
 	margin-left:  auto;
 	margin-right:  auto;
 	align-items: center;
+	zoom: 0.65;
+    -moz-transform: scale(0.65);
+    width:1230px;
 }
 .timer{
 	display: flex;
@@ -78,8 +81,7 @@ body{
 	margin-right:  auto;
 }
 
-
-.db1,.db2,.hb1,.hb2,.mb1,.mb2,.sb1,.sb2{
+.db1,.db2,.hb1,.hb2,.mb1,.mb2,.sb1,.sb2,.msb1,.msb2{
 	float: left;
 	margin: 4px;
 	max-height: 170px;
@@ -89,14 +91,14 @@ body{
 	margin:5px;
 }
 
-.dbd,.mbd,.hbd,.sbd{
+.dbd,.mbd,.hbd,.sbd,.msbd{
 	font-family:ParagonCleanersMedium;
 	font-size: 30px;
 	color:#802000;
 	text-align: center;
 }
 
-#c1,#c2,#c3{
+#c1,#c2,#c3,#c4{
 	font-family: ParagonCleanersMedium;
 	font-size: 70px;
 	color:#802000;
@@ -168,6 +170,22 @@ body{
 	color:#802000;
 	font-weight: bolder;
  }
+ #milliSec1{
+	position: relative;
+	left: 30px;
+  	bottom: 240px;
+  	font-size: 100px;
+	color:#802000;
+	font-weight: bolder;
+ }
+ #milliSec2{
+	position: relative;
+	left: 30px;
+  	bottom: 240px;
+  	font-size: 100px;
+	color:#802000;
+	font-weight: bolder;
+ }
 /*---------------- for days,hours,... ---------------*/
 
 
@@ -191,7 +209,7 @@ body{
 	.mi{
 		min-width: 300px;
 	}
-	#c2{
+	#c2,#c4{
 		display: none;
 	}
 }
