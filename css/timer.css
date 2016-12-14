@@ -1,8 +1,12 @@
 body{
 	background-image: url('../assets/imgs/Timer_bg.jpg');
-	min-height: 726px;
-	max-height: 726px;
-	overflow-y: auto;
+	width: 100%;
+	min-width:500px;
+	max-width: 904px;
+	min-height: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
 }
 
 /* -------------- custom font --------------- */
@@ -12,6 +16,10 @@ body{
 }
 /* -------------- custom font --------------- */
 
+.newdisplay{
+	display:none;
+}
+
 /* class for left image's box and nested class for image inside image1 div */
 .mi{
 	display: inline-block;
@@ -19,6 +27,7 @@ body{
 	height: 50px;
 	margin-top:15px;
 	margin-bottom:80px;
+	min-width:904px;
 }
 
 .image1{
@@ -58,17 +67,17 @@ body{
 
 /*--------------- for timer from here on -------------- */
 #center{
-	display: flex;
+	margin-left:  auto;
+	margin-right:  auto;
 	align-items: center;
-	justify-content: all;
 }
 .timer{
 	display: flex;
 	flex-wrap: wrap;
-	width: auto;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left:  auto;
+	margin-right:  auto;
 }
+
 
 .db1,.db2,.hb1,.hb2,.mb1,.mb2,.sb1,.sb2{
 	float: left;
@@ -170,26 +179,19 @@ body{
 }
 
 /*-------------------- Mobile CSS ------------------------------*/
-@media only screen and (max-width: 950px) {
-    .colon3{
-    	display: none;
-    }
+@media only screen and (max-width: 904px)
+{
+	#center{
+		width:100%;
+		margin: auto;
+	}
+	.timer{
+		width:460px;
+	}
+	.mi{
+		min-width: 300px;
+	}
 }
-
-@media only screen and (max-width: 693px) {
-    .colon3{
-    	display: none;
-    }
-    .colon2{
-    	display:none;
-    }
-    .colon1{
-    	display: none;
-    }
-}
-
-@media only screen and (m)
-
 
 
 
