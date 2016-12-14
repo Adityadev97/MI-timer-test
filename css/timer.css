@@ -2,7 +2,7 @@ body{
 	background-image: url('../assets/imgs/Timer_bg.jpg');
 	width: 100%;
 	min-width:500px;
-	max-width: 904px;
+	max-width: 975px;
 	min-height: 750px;
 	margin-left: auto;
 	margin-right: auto;
@@ -81,7 +81,7 @@ body{
 
 .db1,.db2,.hb1,.hb2,.mb1,.mb2,.sb1,.sb2{
 	float: left;
-	margin:4px;
+	margin: 4px;
 	max-height: 170px;
 }
 
@@ -96,12 +96,12 @@ body{
 	text-align: center;
 }
 
-.colon1,.colon2,.colon3{
-	font-family:ParagonCleanersMedium;
-	font-size: 30px;
+#c1,#c2,#c3{
+	font-family: ParagonCleanersMedium;
+	font-size: 70px;
 	color:#802000;
 	font-weight: bolder;
-	line-height: 130px;
+	line-height: 50px;
 }
 /*---------------- number display -------------------*/
 #days1{
@@ -179,17 +179,20 @@ body{
 }
 
 /*-------------------- Mobile CSS ------------------------------*/
-@media only screen and (max-width: 904px)
+@media only screen and (max-width: 974px)
 {
 	#center{
 		width:100%;
 		margin: auto;
 	}
 	.timer{
-		width:460px;
+		width:500px;
 	}
 	.mi{
 		min-width: 300px;
+	}
+	#c2{
+		display: none;
 	}
 }
 
