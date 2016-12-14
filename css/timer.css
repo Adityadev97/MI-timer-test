@@ -1,6 +1,8 @@
 body{
 	background-image: url('../assets/imgs/Timer_bg.jpg');
-
+	min-height: 726px;
+	max-height: 726px;
+	overflow-y: auto;
 }
 
 /* -------------- custom font --------------- */
@@ -185,6 +187,8 @@ body{
     	display: none;
     }
 }
+
+@media only screen and (m)
 
 
 
